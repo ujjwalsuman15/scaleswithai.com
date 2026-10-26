@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scales With AI Final Testemonial </title>
+    <style>
+        :root {
+
+            --orange: #f58220;
+
+            --blue: #1677c8;
+
+            --black: #000000;
+
+            --green: #58b947;
+
+            --ink: #0b1220;
+
+            --muted: #5e6b7b;
+
+            --line: #e7edf4;
+
+            --soft: #f6f9fc;
+
+            --white: #fff;
+
+            --shadow: 0 20px 60px rgba(13, 32, 61, .10);
+
+        }
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0
+        }
+
+        html {
+
+            scroll-behavior: smooth
+        }
+
+        body {
+
+            font-family: "DM Sans", sans-serif;
+
+            color: var(--ink);
+
+            background: #fff;
+
+            line-height: 1.65
+        }
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit
+        }
+
+        .container-fluid {
+
+            width: min(1460px, 96%);
+
+            margin: auto
+        }
+
+
+        /* ===== Testimonials Slider ===== */
+        #testimonials {
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0;
+            color: #fff;
+            background:
+                radial-gradient(circle at 12% 15%, rgba(22, 119, 200, .22), transparent 27%),
+                radial-gradient(circle at 88% 18%, rgba(245, 130, 32, .16), transparent 25%),
+                radial-gradient(circle at 50% 100%, rgba(88, 185, 71, .10), transparent 30%),
+                linear-gradient(135deg, #07111f 0%, #0b1b2f 52%, #07131f 100%);
+        }
+
+        #testimonials .section-head h2 {
+            color: #fff;
+        }
+
+        #testimonials .section-head p {
+            color: #d8e3ef;
+        }
+
+        .testimonial-slider {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 58px;
+        }
+
+        .testimonial-viewport {
+            width: 100%;
+            overflow: hidden;
+            padding: 10px 3px 8px;
+            margin-top: -10px;
+        }
+
+        .testimonial-track {
+            display: flex;
+            gap: 20px;
+            transition: transform .45s ease;
+            will-change: transform;
+        }
+
+        .testimonial-card {
+            flex: 0 0 calc((100% - 60px) / 4);
+            min-width: 0;
+            min-height: 290px;
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 1px solid rgba(255, 255, 255, .13);
+            border-radius: 20px;
+            position: relative;
+            margin-top: 0;
+            transform: translateY(0);
+            background: linear-gradient(145deg,
+                    rgba(255, 255, 255, .09),
+                    rgba(255, 255, 255, .035));
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+            transition: border-color .25s ease, transform .25s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 130, 32, .6);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .28);
+        }
+
+        .testimonial-stars {
+            color: #ffb15c;
+            font-size: 17px;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-card h3 {
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: -.4px;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card p {
+            color: #c3d0df;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, .12);
+            width: 100%;
+        }
+
+        .testimonial-avatar {
+            width: 42px;
+            height: 42px;
+            flex: 0 0 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f58220, #1677c8);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .testimonial-author strong {
+            display: block;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        .testimonial-author span {
+            display: block;
+            color: #aebfd0;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        /* Previous / Next buttons */
+        .testimonial-btn {
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            transform: translateY(-50%);
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .08);
+            color: #fff;
+            font-size: 25px;
+            line-height: 1;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: .25s ease;
+        }
+
+        .testimonial-btn:hover {
+            background: #f58220;
+            border-color: #f58220;
+        }
+
+        .testimonial-prev {
+            left: 0;
+        }
+
+        .testimonial-next {
+            right: 0;
+        }
+
+        .testimonial-btn:disabled {
+            opacity: .35;
+            cursor: not-allowed;
+        }
+
+        /* Responsive: tablet shows 2 reviews */
+        @media (max-width: 950px) {
+            .testimonial-card {
+                flex-basis: calc((100% - 20px) / 2);
+            }
+
+            .testimonial-slider {
+                padding: 0 48px;
+            }
+        }
+
+        /* Mobile shows 1 review */
+        @media (max-width: 560px) {
+            #testimonials {
+                padding: 60px 0;
+            }
+
+            .testimonial-slider {
+                padding: 0 38px;
+            }
+
+            .testimonial-track {
+                gap: 14px;
+            }
+
+            .testimonial-card {
+                flex-basis: 100%;
+                min-height: 270px;
+                padding: 22px 18px;
+            }
+
+            .testimonial-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 21px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .testimonial-track {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section id="testimonials">
+        <div class="container-fluid">
+
+            <div class="section-head">
+                <div class="kicker">Client Testimonials</div>
+                <h2>What Our <span class="gradient">Clients Say</span></h2>
+                <p>
+                    Real experiences and feedback from businesses
+                    working with Scales With AI.
+                </p>
+            </div>
+
+            <div class="testimonial-slider">
+
+                <button class="testimonial-btn testimonial-prev" type="button" aria-label="Previous reviews">
+                    &#8249;
+                </button>
+
+                <div class="testimonial-viewport">
+                    <div class="testimonial-track">
+
+                        <!-- Review 1 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Great Experience</h3>
+                            <p>
+                                One thing I really appreciate is their customer support. Their team is connected through
+                                WhatsApp, so whenever we have a question or need assistance, getting support is very
+                                convenient. The quick communication makes a big difference when you’re running a
+                                business.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">S</div>
+                                <div>
+                                    <strong>Shalini Singh</strong>
+                                    <span>Stallion Atristry</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 2 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Professional Service</h3>
+                            <p>
+                                I’ve had a very good experience with their performance marketing team. They understand
+                                the importance of leads, conversions, and the complete customer journey instead of
+                                focusing only on running ads. Their communication and support have been excellent👍🏻...
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">K</div>
+                                <div>
+                                    <strong>Kshirsagar Sushil</strong>
+                                    <span>Arish Enterprises</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 3 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Helpful Strategy</h3>
+                            <p>
+                                The WhatsApp automation has made our customer follow-up process much easier. Instead of
+                                manually handling every interaction, we can automate important communication and stay
+                                more consistent with leads. This has been a very useful addition to our business
+                                workflow.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">V</div>
+                                <div>
+                                    <strong>Virat Kumar</strong>
+                                    <span>M. B. Digital Solutions</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 4 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Good Communication</h3>
+                            <p>
+                                My experience with the Scales with AI team has been very positive. They are easy to
+                                communicate with, open to feedback, and willing to explain things whenever needed. Their
+                                approach is practical rather than overly technical, which makes the whole process easier
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">A</div>
+                                <div>
+                                    <strong>Ashish Patra</strong>
+                                    <span>Elvanto Realestate</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 5 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Reliable Support</h3>
+                            <p>
+                                The technology is useful, but what I appreciate equally is the support from the team.
+                                Whenever I have a question, I can connect with them through WhatsApp and get support
+                                quickly. Having that kind of accessibility makes implementing new technology much
+                                easier.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">N</div>
+                                <div>
+                                    <strong>Nishant Kumar</strong>
+                                    <span>UNA Care Services</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 6 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Positive Collaboration</h3>
+                            <p>
+                                Prashant and the Scales with AI team have been very supportive in helping me grow my
+                                business. They don’t just focus on technology; they try to understand the business first
+                                and then suggest solutions. Their guidance and support have been really valuable.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">K</div>
+                                <div>
+                                    <strong>Kanchan Kumar</strong>
+                                    <span>Maa Bhawani Digital Solutions</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 7 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Seamless Business Automation</h3>
+                            <p>
+                                For me, Scales with AI has become one of the most useful AI tools for business owners.
+                                From automation and CRM to leads and marketing, having multiple processes connected
+                                makes daily operations much easier. The team is responsive and always ready to help.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">S</div>
+                                <div>
+                                    <strong>Shubham Raj Sharma</strong>
+                                    <span>Digi Info. Tech</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Review 8 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <h3>Effective Lead Generation</h3>
+                            <p>
+                                The team at Scales With AI did a great job helping us streamline our lead generation and
+                                sales automation. We have seen a real improvement in how we handle our processes since
+                                working with them. I would definitely recommend their services to other businesses
+                                looking to grow.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">F</div>
+                                <div>
+                                    <strong>Namrata Kaur</strong>
+                                    <span>Digital Gyaan Services</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="testimonial-btn testimonial-next" type="button" aria-label="Next reviews">
+                    &#8250;
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        // Testimonial section suffel on every refresh script code
+
+        document.querySelectorAll(".testimonial-slider").forEach((slider) => {
+            const track = slider.querySelector(".testimonial-track");
+            const cards = Array.from(
+                slider.querySelectorAll(".testimonial-card")
+            );
+
+            const prevBtn = slider.querySelector(".testimonial-prev");
+            const nextBtn = slider.querySelector(".testimonial-next");
+            const viewport = slider.querySelector(".testimonial-viewport");
+
+            if (!track || cards.length === 0 || !prevBtn || !nextBtn) return;
+
+            let currentIndex = 0;
+            let autoSlide;
+            let isTransitioning = false;
+
+            // Responsive visible cards
+            function getVisibleCards() {
+                if (window.innerWidth <= 560) return 1;
+                if (window.innerWidth <= 950) return 2;
+                return 4;
+            }
+
+            // Clone first cards to create an infinite loop
+            let visibleCards = getVisibleCards();
+
+            function setupSlider() {
+                clearInterval(autoSlide);
+
+                // Remove old clones before rebuilding
+                track.querySelectorAll(".testimonial-clone").forEach((clone) => {
+                    clone.remove();
+                });
+
+                visibleCards = getVisibleCards();
+
+                // Clone enough cards to keep the loop seamless
+                for (let i = 0; i < visibleCards; i++) {
+                    const clone = cards[i % cards.length].cloneNode(true);
+                    clone.classList.add("testimonial-clone");
+                    clone.setAttribute("aria-hidden", "true");
+                    track.appendChild(clone);
+                }
+
+                currentIndex = 0;
+                track.style.transition = "none";
+                updateSlider();
+
+                // Re-enable smooth transition after layout update
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        track.style.transition = "transform .45s ease";
+                    });
+                });
+
+                startAutoSlide();
+            }
+
+            function updateSlider() {
+                const firstCard = track.querySelector(".testimonial-card");
+                if (!firstCard) return;
+
+                const cardWidth = firstCard.getBoundingClientRect().width;
+                const trackStyle = window.getComputedStyle(track);
+                const gap = parseFloat(trackStyle.columnGap) || 0;
+
+                track.style.transform =
+                    `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+            }
+
+            function moveNext() {
+                if (isTransitioning) return;
+
+                isTransitioning = true;
+                currentIndex++;
+                track.style.transition = "transform .45s ease";
+                updateSlider();
+            }
+
+            function movePrev() {
+                if (isTransitioning) return;
+
+                isTransitioning = true;
+
+                if (currentIndex === 0) {
+                    // Jump to the cloned ending cards, then move backward
+                    currentIndex = cards.length;
+                    track.style.transition = "none";
+                    updateSlider();
+
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            currentIndex--;
+                            track.style.transition = "transform .45s ease";
+                            updateSlider();
+                        });
+                    });
+                } else {
+                    currentIndex--;
+                    track.style.transition = "transform .45s ease";
+                    updateSlider();
+                }
+            }
+
+            track.addEventListener("transitionend", () => {
+                // Reached cloned cards at the end: reset to original beginning
+                if (currentIndex >= cards.length) {
+                    track.style.transition = "none";
+                    currentIndex = 0;
+                    updateSlider();
+                }
+
+                isTransitioning = false;
+            });
+
+            function startAutoSlide() {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(moveNext, 4000);
+            }
+
+            // Manual buttons
+            nextBtn.disabled = false;
+            prevBtn.disabled = false;
+
+            nextBtn.addEventListener("click", () => {
+                moveNext();
+                startAutoSlide();
+            });
+
+            prevBtn.addEventListener("click", () => {
+                movePrev();
+                startAutoSlide();
+            });
+
+            // Pause while user hovers over the slider
+            slider.addEventListener("mouseenter", () => {
+                clearInterval(autoSlide);
+            });
+
+            slider.addEventListener("mouseleave", startAutoSlide);
+
+            // Swipe support on mobile
+            let touchStartX = 0;
+
+            if (viewport) {
+                viewport.addEventListener("touchstart", (event) => {
+                    touchStartX = event.changedTouches[0].screenX;
+                }, { passive: true });
+
+                viewport.addEventListener("touchend", (event) => {
+                    const delta =
+                        event.changedTouches[0].screenX - touchStartX;
+
+                    if (Math.abs(delta) > 40) {
+                        if (delta < 0) {
+                            moveNext();
+                        } else {
+                            movePrev();
+                        }
+                        startAutoSlide();
+                    }
+                }, { passive: true });
+            }
+
+            // Recalculate when screen size changes
+            let resizeTimer;
+
+            window.addEventListener("resize", () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(setupSlider, 200);
+            });
+
+            setupSlider();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scales with AI | AI Growth, Automation & Digital Marketing</title>
+
+    <meta name="description"
+        content="Scales with AI helps businesses scale faster with AI automation, digital marketing, lead generation, CRM automation, AI agents, SEO, websites and performance growth strategies.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://scaleswithai.com/">
+
+    <meta name="author" content="Scales with AI">
+    <meta name="publisher" content="Scales with AI">
+
+    <meta name="keywords"
+        content="AI automation, AI solutions, digital marketing, AI marketing, CRM automation, AI agents, lead generation, sales funnels, SEO services, performance marketing, website development, business automation">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scaleswithai.com/">
+    <meta property="og:title" content="Scales with AI | AI Growth, Automation & Digital Marketing">
+    <meta property="og:description"
+        content="Build smarter, automate better and scale faster with AI-powered growth systems, digital marketing, automation and performance strategies.">
+    <meta property="og:image" content="https://scaleswithai.com/og-image">
+    <meta property="og:site_name" content="Scales with AI">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scales with AI | AI Growth & Automation">
+    <meta name="twitter:description"
+        content="AI-powered digital growth, automation, marketing and business solutions designed to help businesses scale faster.">
+    <meta name="twitter:image" content="https://scaleswithai.com/og-image">
+
+    <meta name="theme-color" content="#0b1220">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --orange: #f58220;
+            --blue: #1677c8;
+            --black: #000000;
+            --green: #58b947;
+            --ink: #0b1220;
+            --muted: #5e6b7b;
+            --line: #e7edf4;
+            --soft: #f6f9fc;
+            --white: #fff;
+            --shadow: 0 20px 60px rgba(13, 32, 61, .10);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: var(--ink);
+            background: #fff;
+            line-height: 1.65
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .container-fluid {
+            width: min(1460px, 96%);
+            margin: auto
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(231, 237, 244, .8)
+        }
+
+        .nav-inner {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px
+        }
+
+        .nav .nav-inner a img {
+            width: 30%;
+            height: 100%;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 21px;
+            letter-spacing: -.6px
+        }
+
+        .brand-mark {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            display: grid;
+            place-items: center
+        }
+
+        .brand-mark:before,
+        .brand-mark:after {
+            content: "";
+            position: absolute;
+            border: 6px solid;
+            transform: rotate(45deg);
+            border-radius: 12px;
+            width: 25px;
+            height: 25px
+        }
+
+        .brand-mark:before {
+            border-color: var(--orange) var(--blue) transparent transparent;
+            left: 1px
+        }
+
+        .brand-mark:after {
+            border-color: transparent var(--green) var(--blue) transparent;
+            right: 1px
+        }
+
+        .brand span {
+            color: var(--orange)
+        }
+
+        .brand b {
+            color: var(--blue)
+        }
+
+        .menu {
+            display: flex;
+            gap: 27px;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #344154
+        }
+
+        .menu a:hover {
+            color: var(--blue);
+        }
+
+        .menu a.nav-cta:hover {
+            color: var(--white);
+            background-image: linear-gradient(to bottom, #FA701A, #F96018);
+        }
+
+        .nav-cta,
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border-radius: 12px;
+            padding: 13px 20px;
+            font-weight: 700;
+            transition: .25s
+        }
+
+        .nav-cta {
+            background: #0F233A;
+            color: #fff;
+            background-image: linear-gradient(to bottom, #1e436d, #0F233A);
+        }
+
+        .nav-cta:hover,
+        .btn.primary:hover,
+        .btn.dark:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 28px rgba(11, 18, 32, .18);
+            color: var(--white);
+            background-color: var(--orange);
+            background-image: linear-gradient(to bottom, #FA701A, #F96018);
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 50px 0 82px;
+            background:
+                radial-gradient(circle at 82% 20%, rgba(22, 119, 200, .12), transparent 28%),
+                radial-gradient(circle at 15% 30%, rgba(245, 130, 32, .10), transparent 28%),
+                linear-gradient(180deg, #fbfdff 0%, #fff 100%)
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 65px;
+            align-items: center
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #dce8f3;
+            background: #fff;
+            padding: 7px 12px;
+            border-radius: 99px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+            color: var(--blue);
+            box-shadow: 0 8px 25px rgba(22, 119, 200, .06)
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 0 5px rgba(88, 185, 71, .12)
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Space Grotesk", sans-serif;
+            line-height: 1.08;
+            letter-spacing: -1.8px
+        }
+
+        h1 {
+            font-size: clamp(46px, 6vw, 76px);
+            margin: 20px 0 22px
+        }
+
+        .gradient {
+            background: linear-gradient(100deg, var(--orange), var(--blue), var(--green));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--muted);
+            max-width: 640px
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px
+        }
+
+        .btn {
+            padding: 15px 22px
+        }
+
+        .btn.primary {
+            background-image: linear-gradient(to bottom, #1e436d, #0F233A);
+            color: #fff;
+            box-shadow: 0 12px 30px rgba(245, 130, 32, .24);
+        }
+
+        .btn.secondary {
+            border: 1px solid #dbe4ee;
+            background-image: linear-gradient(to bottom, #FA701A, #F96018);
+            color: var(--white)
+        }
+
+        .btn.dark {
+            background: #0F233A;
+            color: #fff;
+            background-image: linear-gradient(to bottom, #1e436d, #0F233A);
+        }
+
+        .hero-visual {
+            min-height: 430px;
+            position: relative;
+            display: grid;
+            place-items: center
+        }
+
+        .glow {
+            position: absolute;
+            width: 310px;
+            height: 310px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(22, 119, 200, .17), transparent 67%)
+        }
+
+        .orbit {
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            border: 1px dashed #b9cee1;
+            position: absolute;
+            animation: spin 20s linear infinite
+        }
+
+        .orbit:before,
+        .orbit:after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--orange);
+            top: 10px;
+            left: 50%;
+            box-shadow: 0 0 0 8px rgba(245, 130, 32, .12)
+        }
+
+        .orbit:after {
+            background: var(--green);
+            top: auto;
+            left: auto;
+            bottom: 38px;
+            right: 15px
+        }
+
+        .core {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .93);
+            border: 1px solid #e1eaf2;
+            box-shadow: var(--shadow);
+            display: grid;
+            place-items: center;
+            position: relative;
+            z-index: 2
+        }
+
+        .core-mark {
+            font-family: "Space Grotesk";
+            font-size: 75px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--orange), var(--blue), var(--green));
+            -webkit-background-clip: text;
+            color: transparent
+        }
+
+        .float-card {
+            position: absolute;
+            background: #fff;
+            border: 1px solid #e4ebf2;
+            box-shadow: var(--shadow);
+            border-radius: 18px;
+            padding: 14px 16px;
+            z-index: 4;
+            min-width: 150px
+        }
+
+        .float-card strong {
+            display: block;
+            font-size: 16px
+        }
+
+        .float-card small {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .card-a {
+            top: 38px;
+            left: 10px
+        }
+
+        .card-b {
+            right: 0;
+            top: 95px
+        }
+
+        .card-c {
+            left: 35px;
+            bottom: 30px
+        }
+
+        .card-d {
+            right: 30px;
+            bottom: 45px
+        }
+
+        section {
+            padding: 60px 0
+        }
+
+        .section-head {
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto 48px
+        }
+
+        .kicker {
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: var(--orange);
+            margin-bottom: 12px
+        }
+
+        h2 {
+            font-size: clamp(34px, 4vw, 52px);
+            margin-bottom: 16px
+        }
+
+        .section-head p {
+            color: var(--muted);
+            font-size: 17px
+        }
+
+        .about {
+            background: var(--soft)
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            gap: 55px;
+            align-items: center
+        }
+
+        .about-box {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            padding: 32px;
+            box-shadow: var(--shadow)
+        }
+
+        .about-box .big {
+            font-size: 42px;
+            font-family: "Space Grotesk";
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 15px
+        }
+
+        .about-copy p {
+            color: var(--muted);
+            margin: 12px 0
+        }
+
+        .pills {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 22px
+        }
+
+        .pill {
+            padding: 9px 13px;
+            border-radius: 99px;
+            background: #eef6ff;
+            color: #1769a9;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px
+        }
+
+        #services {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(circle at 12% 15%, rgba(22, 119, 200, .22), transparent 27%), radial-gradient(circle at 88% 18%, rgba(245, 130, 32, .16), transparent 25%), radial-gradient(circle at 50% 100%, rgba(88, 185, 71, .10), transparent 30%), linear-gradient(135deg, #07111f 0%, #0b1b2f 52%, #07131f 100%);
+            color: #fff;
+        }
+
+        #services .section-head p {
+            color: #aebfd0;
+        }
+
+        .service {
+            padding: 25px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            transition: .25s;
+            position: relative;
+            overflow: hidden;
+
+
+
+            background: linear-gradient(145deg, rgba(255, 255, 255, .085), rgba(255, 255, 255, .035));
+            border-color: rgba(255, 255, 255, .12);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, .20);
+            backdrop-filter: blur(10px);
+        }
+
+        .service:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--orange), var(--blue), var(--green));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: .25s
+        }
+
+        .service:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow)
+        }
+
+        .service:hover:before {
+            transform: scaleX(1)
+        }
+
+        #services .service .icon {
+            background: rgba(255, 255, 255, .08);
+            color: #59aef0;
+            border: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        .icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 14px;
+            display: grid;
+            place-items: center;
+            background: #f1f7fd;
+            color: var(--blue);
+            font-size: 20px;
+            margin-bottom: 17px
+        }
+
+        .service h3 {
+            font-size: 20px;
+            letter-spacing: -.6px;
+            margin-bottom: 8px
+        }
+
+        .service p {
+            font-size: 14px;
+            color: #aebfd0;
+        }
+
+        .why {
+            background: linear-gradient(110deg, #fff4e9, #eef7ff 55%, #effbea);
+            /* background: linear-gradient(135deg, #0b1220, #10253d); */
+            color: #fff;
+            position: relative;
+            overflow: hidden
+        }
+
+        .why:after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            right: -180px;
+            top: -180px;
+            background: radial-gradient(circle, rgba(22, 119, 200, .32), transparent 65%)
+        }
+
+        .why .section-head h2 {
+            color: #000000
+        }
+
+        .why .section-head p {
+            color: #000000
+        }
+
+        .why .kicker {
+            color: #ffae69
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            position: relative;
+            z-index: 2
+        }
+
+        .why-card {
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 20px;
+            background: linear-gradient(40deg, #e6ceb5, #f8f4f1, #d9f8f7);
+            /* background: rgba(255, 255, 255, .05) */
+        }
+
+        .why-card b {
+            color: #000000;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px
+        }
+
+        .why-card span {
+            color: #202020;
+            font-size: 14px
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px
+        }
+
+        #process {
+            background:
+                radial-gradient(circle at 5% 80%, rgba(88, 185, 71, .13), transparent 25%),
+                radial-gradient(circle at 95% 15%, rgba(22, 119, 200, .18), transparent 28%),
+                linear-gradient(135deg, #081321 0%, #0d2035 55%, #07111f 100%);
+            color: #fff;
+        }
+
+        #process .section-head p {
+            color: #aebfd0;
+        }
+
+        #process .step {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(145deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .035));
+            border-color: rgba(255, 255, 255, .12);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: .25s ease;
+        }
+
+        #process .step::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #f58220, #1677c8, #58b947);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: .25s ease;
+        }
+
+        #process .step:hover {
+            transform: translateY(-7px);
+            border-color: rgba(22, 119, 200, .40);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .30);
+        }
+
+        #process .step:hover::before {
+            transform: scaleX(1);
+        }
+
+        .step {
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 25px;
+            background: #fff
+        }
+
+        #process .num {
+            color: rgba(255, 255, 255, .18);
+            background: linear-gradient(135deg, #ff9a45, #55aef0, #67c957);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .num {
+            font-family: "Space Grotesk";
+            font-size: 38px;
+            color: #d8e5f1;
+            font-weight: 700
+        }
+
+        .step h3 {
+            font-size: 19px;
+            margin: 7px 0
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #aebfd0;
+        }
+
+        .cta {
+            padding: 80px 0
+        }
+
+        .cta-box {
+            border-radius: 30px;
+            padding: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            background: linear-gradient(110deg, #fff4e9, #eef7ff 55%, #effbea);
+            border: 1px solid #e4ebf2
+        }
+
+        .cta-box h2 {
+            max-width: 100%;
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            margin-top: 10px
+        }
+
+        #contact {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(circle at 12% 15%, rgba(22, 119, 200, .22), transparent 27%), radial-gradient(circle at 88% 18%, rgba(245, 130, 32, .16), transparent 25%), radial-gradient(circle at 50% 100%, rgba(88, 185, 71, .10), transparent 30%), linear-gradient(135deg, #07111f 0%, #0b1b2f 52%, #07131f 100%);
+            color: #fff;
+
+        }
+
+        #contact .section-head p {
+            color: #ffffff;
+        }
+
+        .contact {
+            background: var(--soft)
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 45px
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 12px
+        }
+
+        .contact-info p {
+            color: #d8d7d7;
+            margin-bottom: 20px
+        }
+
+        .contact-list {
+            display: grid;
+            gap: 12px
+        }
+
+        .contact-item {
+            transition: .25s;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(145deg, rgba(255, 255, 255, .085), rgba(255, 255, 255, .035));
+            border-color: rgba(255, 255, 255, .12);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, .20);
+            backdrop-filter: blur(10px);
+            padding: 14px 16px;
+            /* background: #fff; */
+            border-radius: 14px
+        }
+
+        .form {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: var(--shadow)
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px
+        }
+
+        .field {
+            display: grid;
+            gap: 7px
+        }
+
+        .field.full {
+            grid-column: 1/-1
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #425064
+        }
+
+        input,
+        textarea {
+            font: inherit;
+            border: 1px solid #dce5ee;
+            border-radius: 11px;
+            padding: 12px 13px;
+            outline: none
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--blue);
+            box-shadow: 0 0 0 4px rgba(22, 119, 200, .08)
+        }
+
+        textarea {
+            min-height: 125px;
+            resize: vertical
+        }
+
+        .footer {
+            background: linear-gradient(110deg, #fff4e9, #eef7ff 55%, #effbea);
+            color: #000000;
+            padding: 30px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center
+        }
+
+        .footer .brand {
+            color: #fff
+        }
+
+        .footer .brand span {
+            color: var(--orange)
+        }
+
+        .footer .brand b {
+            color: #57a9e8
+        }
+
+        .footer small {
+            font-size: 12px
+        }
+
+        .mobile {
+            display: none
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        @media(max-width:900px) {
+            .menu {
+                display: none
+            }
+
+            .mobile {
+                display: block;
+                background: none;
+                border: 0;
+                font-size: 25px
+            }
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                padding-top: 70px
+            }
+
+            .hero-visual {
+                min-height: 360px
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .why-grid,
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .cta-box {
+                padding: 40px;
+                flex-direction: column;
+                align-items: flex-start
+            }
+        }
+
+        @media(max-width:600px) {
+            section {
+                padding: 70px 0
+            }
+
+            .services-grid,
+            .why-grid,
+            .process-grid,
+            .form-grid {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                padding: 55px 0
+            }
+
+            .hero p {
+                font-size: 16px
+            }
+
+            .hero-visual {
+                transform: scale(.85);
+                margin: -15px 0
+            }
+
+            .float-card {
+                display: none
+            }
+
+            .cta-box {
+                padding: 30px
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start
+            }
+
+            .nav-inner {
+                height: 70px
+            }
+        }
+
+        /* ===== Responsive + production fixes ===== */
+        :root {
+            --header-h: 78px
+        }
+
+        body {
+            overflow-x: hidden
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        section[id] {
+            scroll-margin-top: calc(var(--header-h) + 18px)
+        }
+
+        .brand {
+            min-width: 0
+        }
+
+        .brand-logo {
+            display: block !important;
+            width: 185px !important;
+            height: auto !important;
+            max-height: 62px;
+            object-fit: contain
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 46px;
+            height: 46px;
+            padding: 9px;
+            border: 1px solid #dce5ee;
+            border-radius: 12px;
+            background: #fff;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 99px;
+            background: var(--ink);
+            transition: transform .25s ease, opacity .2s ease
+        }
+
+        .menu-toggle.is-open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg)
+        }
+
+        .menu-toggle.is-open span:nth-child(2) {
+            opacity: 0
+        }
+
+        .menu-toggle.is-open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg)
+        }
+
+        .menu a {
+            white-space: nowrap
+        }
+
+        .form button {
+            border: 0;
+            cursor: pointer;
+            width: 100%
+        }
+
+        .nav.is-scrolled {
+            box-shadow: 0 8px 30px rgba(13, 32, 61, .07)
+        }
+
+        @media(max-width:1100px) {
+            .container-fluid {
+                width: min(94%, 1160px)
+            }
+
+            .menu {
+                gap: 17px;
+                font-size: 13px
+            }
+
+            .nav-cta {
+                padding: 11px 15px
+            }
+
+            .hero-grid {
+                gap: 35px
+            }
+        }
+
+        @media(max-width:900px) {
+            :root {
+                --header-h: 70px
+            }
+
+            .nav-inner {
+                height: var(--header-h)
+            }
+
+            .brand-logo {
+                width: 160px !important;
+                max-height: 56px
+            }
+
+            .menu-toggle {
+                display: flex
+            }
+
+            .menu {
+                display: flex;
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 3%;
+                right: 3%;
+                width: auto;
+                padding: 12px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 4px;
+                background: rgba(255, 255, 255, .98);
+                border: 1px solid var(--line);
+                border-radius: 18px;
+                box-shadow: 0 22px 55px rgba(13, 32, 61, .16);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transform: translateY(-8px);
+                transition: opacity .22s ease, transform .22s ease, visibility .22s ease
+            }
+
+            .menu.is-open {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transform: translateY(0)
+            }
+
+            .menu a {
+                width: 100%;
+                padding: 13px 14px;
+                border-radius: 10px
+            }
+
+            .menu a:not(.nav-cta):hover {
+                background: #f4f8fc
+            }
+
+            .menu .nav-cta {
+                margin-top: 5px;
+                text-align: center
+            }
+        }
+
+        @media(max-width:600px) {
+            .container-fluid {
+                width: min(92%, 680px)
+            }
+
+            .brand-logo {
+                width: 145px !important;
+                max-height: 52px
+            }
+
+            h1 {
+                font-size: clamp(42px, 12vw, 60px);
+                letter-spacing: -1.5px
+            }
+
+            h2 {
+                letter-spacing: -1.2px
+            }
+
+            .hero {
+                padding: 52px 0 45px
+            }
+
+            .actions {
+                flex-direction: column;
+                align-items: stretch
+            }
+
+            .actions .btn {
+                width: 100%
+            }
+
+            .hero-visual {
+                min-height: 315px;
+                transform: none;
+                margin: 4px 0 -5px
+            }
+
+            .orbit {
+                width: 255px;
+                height: 255px
+            }
+
+            .core {
+                width: 165px;
+                height: 165px
+            }
+
+            .core-mark {
+                font-size: 60px
+            }
+
+            .glow {
+                width: 250px;
+                height: 250px
+            }
+
+            .float-card {
+                display: none
+            }
+
+            section {
+                padding: 68px 0
+            }
+
+            .section-head {
+                margin-bottom: 34px
+            }
+
+            .section-head p {
+                font-size: 15px
+            }
+
+            .about-box {
+                padding: 25px
+            }
+
+            .about-box .big {
+                font-size: 34px
+            }
+
+            .service,
+            .why-card,
+            .step {
+                padding: 21px
+            }
+
+            .cta {
+                padding: 60px 0
+            }
+
+            .cta-box {
+                padding: 28px;
+                border-radius: 22px
+            }
+
+            .cta-box .btn {
+                width: 100%
+            }
+
+            .form {
+                padding: 20px;
+                border-radius: 20px
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important
+            }
+        }
+
+        /* ===== Enhanced About Section ===== */
+        .about-section-head {
+            max-width: 820px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .about-section-head h2 {
+            margin-bottom: 14px
+        }
+
+        .about-intro {
+            max-width: 650px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .about-content-grid {
+            display: grid;
+            grid-template-columns: .82fr 1.18fr;
+            gap: 55px;
+            align-items: stretch;
+        }
+
+        .about-highlight {
+            min-height: 390px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 28px;
+            padding: 1px;
+            background: linear-gradient(135deg, var(--orange), var(--blue) 55%, var(--green));
+            box-shadow: 0 25px 70px rgba(13, 32, 61, .14);
+        }
+
+        .about-highlight-glow {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            right: -100px;
+            top: -100px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(22, 119, 200, .45), transparent 68%);
+        }
+
+        .about-highlight-inner {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            min-height: 388px;
+            border-radius: 27px;
+            padding: 38px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(145deg, #0b1220, #102b47);
+            color: #fff;
+        }
+
+        .about-mini-label {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.7px;
+            color: #9fc6e8;
+            margin-bottom: 22px;
+        }
+
+        .about-highlight h3 {
+            font-size: clamp(34px, 4vw, 48px);
+            letter-spacing: -1.7px;
+        }
+
+        .about-highlight h3 span {
+            background: linear-gradient(90deg, #ff9a45, #67c957);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .about-line {
+            width: 70px;
+            height: 3px;
+            border-radius: 99px;
+            margin: 25px 0 15px;
+            background: linear-gradient(90deg, var(--orange), var(--blue), var(--green));
+        }
+
+        .about-highlight-inner p {
+            color: #b9c7d7;
+            font-size: 14px
+        }
+
+        .about-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about-copy p {
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 0 0 18px;
+        }
+
+        .about-copy p strong {
+            color: var(--ink);
+            font-weight: 700
+        }
+
+        .about-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 8px;
+        }
+
+        .about-tags span {
+            border: 1px solid #dce7f0;
+            background: #fff;
+            color: #31506b;
+            border-radius: 99px;
+            padding: 9px 13px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        @media(max-width:900px) {
+            .about-content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px
+            }
+
+            .about-highlight {
+                min-height: 330px
+            }
+
+            .about-highlight-inner {
+                min-height: 328px
+            }
+        }
+
+        @media(max-width:600px) {
+            .about-section-head {
+                margin-bottom: 32px
+            }
+
+            .about-intro {
+                font-size: 15px
+            }
+
+            .about-highlight-inner {
+                padding: 28px
+            }
+
+            .about-highlight h3 {
+                font-size: 34px
+            }
+
+            .about-copy p {
+                font-size: 15px;
+                line-height: 1.75
+            }
+        }
+
+
+        /* ===== Our Mission Section ===== */
+        .mission {
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1.08fr .92fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .mission-copy {
+            max-width: 700px;
+        }
+
+        .mission-copy h2 {
+            font-size: clamp(36px, 3.9vw, 56px);
+            margin-bottom: 22px;
+        }
+
+        .mission-copy p {
+            color: var(--muted);
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 650px;
+            margin-bottom: 15px;
+        }
+
+        .mission-visual {
+            min-height: 390px;
+            position: relative;
+            display: grid;
+            place-items: center;
+            border-radius: 30px;
+            background:
+                radial-gradient(circle at 50% 50%, rgba(22, 119, 200, .12), transparent 42%),
+                linear-gradient(145deg, #f8fbfe, #eef6fb);
+            border: 1px solid #e2ebf2;
+            overflow: hidden;
+        }
+
+        .mission-ring {
+            position: absolute;
+            border: 1px solid rgba(22, 119, 200, .18);
+            border-radius: 50%;
+        }
+
+        .mission-ring-one {
+            width: 285px;
+            height: 285px;
+            animation: missionSpin 18s linear infinite;
+        }
+
+        .mission-ring-two {
+            width: 215px;
+            height: 215px;
+            border-color: rgba(245, 130, 32, .2);
+            animation: missionSpinReverse 14s linear infinite;
+        }
+
+        .mission-orb {
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .mission-orb-one {
+            background: var(--orange);
+            top: 18%;
+            left: 50%;
+            box-shadow: 0 0 0 8px rgba(245, 130, 32, .12);
+        }
+
+        .mission-orb-two {
+            background: var(--green);
+            bottom: 23%;
+            right: 23%;
+            box-shadow: 0 0 0 8px rgba(88, 185, 71, .12);
+        }
+
+        .mission-center {
+            width: 155px;
+            height: 155px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            background: rgba(255, 255, 255, .94);
+            border: 1px solid #dce8f1;
+            box-shadow: 0 22px 55px rgba(13, 32, 61, .12);
+        }
+
+        .mission-center span:first-child {
+            font-family: "Space Grotesk";
+            font-size: 40px;
+            line-height: 1;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--orange), var(--blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .mission-center strong {
+            color: #9aaabd;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .mission-center span:last-child {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--blue);
+        }
+
+        @keyframes missionSpin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes missionSpinReverse {
+            to {
+                transform: rotate(-360deg)
+            }
+        }
+
+        @media(max-width:900px) {
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .mission-copy {
+                max-width: none
+            }
+
+            .mission-visual {
+                min-height: 330px
+            }
+        }
+
+        @media(max-width:600px) {
+            .mission-copy h2 {
+                font-size: 35px
+            }
+
+            .mission-copy p {
+                font-size: 15px
+            }
+
+            .mission-visual {
+                min-height: 290px;
+                border-radius: 22px
+            }
+
+            .mission-ring-one {
+                width: 230px;
+                height: 230px
+            }
+
+            .mission-ring-two {
+                width: 175px;
+                height: 175px
+            }
+
+            .mission-center {
+                width: 130px;
+                height: 130px
+            }
+
+            .mission-center span:first-child {
+                font-size: 34px
+            }
+        }
+
+        /* ===== Our Clients logo wall ===== */
+        #clients {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 8% 12%, rgba(245, 130, 32, .10), transparent 27%),
+                radial-gradient(circle at 92% 80%, rgba(22, 119, 200, .07), transparent 28%),
+                linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        #clients .section-head {
+            max-width: 820px;
+        }
+
+        .clients-intro {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .client-logo-card {
+            min-width: 0;
+            min-height: 145px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 20px;
+            border: 1px solid #e7ebf0;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, .94);
+            box-shadow: 0 12px 30px rgba(13, 32, 61, .055);
+            transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+        }
+
+        .client-logo-card.client-alternate-bg {
+            background: radial-gradient(circle at 12% 15%, rgba(22, 119, 200, .22), transparent 27%), radial-gradient(circle at 88% 18%, rgba(245, 130, 32, .16), transparent 25%), radial-gradient(circle at 50% 100%, rgba(88, 185, 71, .10), transparent 30%), linear-gradient(135deg, #07111f 0%, #0b1b2f 52%, #07131f 100%);
+        }
+
+        .client-logo-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 130, 32, .4);
+            box-shadow: 0 18px 38px rgba(13, 32, 61, .10);
+        }
+
+        .client-logo-card img {
+            display: block;
+            width: 100%;
+            /* max-width: 175px; */
+            height: 95px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .clients-note {
+            margin-top: 28px;
+            text-align: center;
+            color: #637186;
+            font-size: 13px;
+        }
+
+        .clients-note strong {
+            color: var(--ink);
+        }
+
+        .client-logo-card.d-lap-n {
+            display: none;
+        }
+
+        @media (max-width: 1100px) {
+            .client-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 800px) {
+            .client-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 14px;
+            }
+
+            .client-logo-card.d-lap-n {
+                display: block;
+            }
+        }
+
+        @media (max-width: 560px) {
+            #clients .section-head {
+                margin-bottom: 30px;
+            }
+
+            .client-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .client-logo-card {
+                min-height: 112px;
+                padding: 16px 12px;
+                border-radius: 14px;
+            }
+
+            .client-logo-card img {
+                /* max-width: 140px; */
+                height: 75px;
+            }
+
+            .clients-note {
+                line-height: 1.7;
+            }
+
+            .client-logo-card.d-lap-n {
+                display: none;
+            }
+
+            .client-logo-card.d-lap-n.d-mob-b {
+                display: block;
+            }
+        }
+
+
+        /* ===== Testimonials Slider ===== */
+        #testimonials {
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0;
+            color: #fff;
+            background:
+                radial-gradient(circle at 12% 15%, rgba(22, 119, 200, .22), transparent 27%),
+                radial-gradient(circle at 88% 18%, rgba(245, 130, 32, .16), transparent 25%),
+                radial-gradient(circle at 50% 100%, rgba(88, 185, 71, .10), transparent 30%),
+                linear-gradient(135deg, #07111f 0%, #0b1b2f 52%, #07131f 100%);
+        }
+
+        #testimonials .section-head h2 {
+            color: #fff;
+        }
+
+        #testimonials .section-head p {
+            color: #d8e3ef;
+        }
+
+        .testimonial-slider {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 58px;
+        }
+
+        .testimonial-viewport {
+            width: 100%;
+            overflow: hidden;
+            padding: 10px 3px 8px;
+            margin-top: -10px;
+        }
+
+        .testimonial-track {
+            display: flex;
+            gap: 20px;
+            transition: transform .45s ease;
+            will-change: transform;
+        }
+
+        .testimonial-card {
+            flex: 0 0 calc((100% - 60px) / 4);
+            min-width: 0;
+            min-height: 290px;
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 1px solid rgba(255, 255, 255, .13);
+            border-radius: 20px;
+            position: relative;
+            margin-top: 0;
+            transform: translateY(0);
+            background: linear-gradient(145deg,
+                    rgba(255, 255, 255, .09),
+                    rgba(255, 255, 255, .035));
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+            transition: border-color .25s ease, transform .25s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 130, 32, .6);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .28);
+        }
+
+        .testimonial-stars {
+            color: #ffb15c;
+            font-size: 17px;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-card h3 {
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: -.4px;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card p {
+            color: #c3d0df;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, .12);
+            width: 100%;
+        }
+
+        .testimonial-avatar {
+            width: 42px;
+            height: 42px;
+            flex: 0 0 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f58220, #1677c8);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .testimonial-author strong {
+            display: block;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        .testimonial-author span {
+            display: block;
+            color: #aebfd0;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        /* Previous / Next buttons */
+        .testimonial-btn {
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            transform: translateY(-50%);
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .08);
+            color: #fff;
+            font-size: 25px;
+            line-height: 1;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: .25s ease;
+        }
+
+        .testimonial-btn:hover {
+            background: #f58220;
+            border-color: #f58220;
+        }
+
+        .testimonial-prev {
+            left: 0;
+        }
+
+        .testimonial-next {
+            right: 0;
+        }
+
+        .testimonial-btn:disabled {
+            opacity: .35;
+            cursor: not-allowed;
+        }
+
+        /* Responsive: tablet shows 2 reviews */
+        @media (max-width: 950px) {
+            .testimonial-card {
+                flex-basis: calc((100% - 20px) / 2);
+            }
+
+            .testimonial-slider {
+                padding: 0 48px;
+            }
+        }
+
+        /* Mobile shows 1 review */
+        @media (max-width: 560px) {
+            #testimonials {
+                padding: 60px 0;
+            }
+
+            .testimonial-slider {
+                padding: 0 38px;
+            }
+
+            .testimonial-track {
+                gap: 14px;
+            }
+
+            .testimonial-card {
+                flex-basis: 100%;
+                min-height: 270px;
+                padding: 22px 18px;
+            }
+
+            .testimonial-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 21px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .testimonial-track {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header class="nav" id="siteHeader">
+        <div class="container-fluid nav-inner">
+            <a class="brand" href="https://scaleswithai.com/" aria-label="Scales with AI home">
+                <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/4d259bc3-16fa-40c8-a9b5-8822e873eaaf.png"
+                    alt="Scales With AI" class="brand-logo">
+            </a>
+            <nav class="menu" id="mainMenu" aria-label="Primary navigation">
+                <a href="https://scaleswithai.com/">Home</a>
+                <a href="#about">About</a>
+                <a href="#mission">Mission</a>
+                <a href="#services">Services</a>
+                <a href="#why">Why Us</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+                <a class="nav-cta" href="https://book.scaleswithai.com/" target="_blank" rel="noopener">Book a Strategy
+                    Call →</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-controls="mainMenu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container-fluid hero-grid">
+                <div>
+                    <div class="eyebrow"><i class="dot"></i> AI-Powered Digital Growth</div>
+                    <h1>Build Smarter.<br><span class="gradient">Automate Better.</span><br>Scale Faster.</h1>
+                    <p>Scales with AI is a next-generation digital growth and AI solutions company helping businesses
+                        scale faster, automate smarter, and grow sustainably.</p>
+                    <div class="actions">
+                        <a class="btn primary" href="#contact">Start Your Growth Journey →</a>
+                        <a class="btn secondary" href="#services">Explore Services</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="glow"></div>
+                    <div class="orbit"></div>
+                    <div class="core">
+                        <div class="core-mark">∞</div>
+                    </div>
+                    <div class="float-card card-a"><strong>AI Automation</strong><small>Smarter workflows</small></div>
+                    <div class="float-card card-b"><strong>Lead Generation</strong><small>More qualified leads</small>
+                    </div>
+                    <div class="float-card card-c"><strong>CRM Systems</strong><small>Connected growth</small></div>
+                    <div class="float-card card-d"><strong>Performance</strong><small>Measurable results</small></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="about" class="about">
+            <div class="container-fluid">
+                <div class="about-section-head">
+                    <div class="kicker">About Scales with AI</div>
+                    <h2>Where <span class="gradient">AI meets digital growth.</span></h2>
+                    <p class="about-intro">
+                        We build smarter growth systems that connect strategy, technology,
+                        automation, and execution.
+                    </p>
+                </div>
+
+                <div class="about-content-grid">
+                    <div class="about-highlight">
+                        <div class="about-highlight-glow"></div>
+                        <div class="about-highlight-inner">
+                            <span class="about-mini-label">SCALABLE • SMART • SUSTAINABLE</span>
+                            <h3>Scale faster.<br>Automate smarter.<br><span>Grow sustainably.</span></h3>
+                            <div class="about-line"></div>
+                            <p>Strategy + Technology + Automation + Execution</p>
+                        </div>
+                    </div>
+
+                    <div class="about-copy">
+                        <p>
+                            <strong>Scales with AI</strong> is a next-generation digital growth
+                            and AI solutions company helping businesses
+                            <strong>scale faster, automate smarter, and grow sustainably.</strong>
+                        </p>
+
+                        <p>
+                            We combine <strong>Artificial Intelligence, Digital Marketing,
+                                Automation, and Performance Strategies</strong> to create powerful
+                            growth systems that help businesses attract more customers,
+                            generate quality leads, improve conversions, and streamline
+                            their operations.
+                        </p>
+
+                        <p>
+                            From <strong>AI-powered sales funnels and CRM automation</strong>
+                            to <strong>lead generation, paid marketing, SEO, branding,
+                                websites, and AI agents</strong>, we provide end-to-end solutions
+                            designed around your business goals.
+                        </p>
+
+                        <div class="about-tags">
+                            <span>AI Solutions</span>
+                            <span>Digital Marketing</span>
+                            <span>Automation</span>
+                            <span>Performance Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="mission">
+            <div class="container-fluid">
+                <div class="mission-grid">
+                    <div class="mission-copy">
+                        <div class="kicker">Our Mission</div>
+                        <h2>Build <span class="gradient">scalable, predictable,</span> and profitable growth systems.
+                        </h2>
+                        <p>
+                            Our mission is simple — help businesses leverage AI and digital technology
+                            to build scalable, predictable, and profitable growth systems.
+                        </p>
+                        <p>
+                            We bring strategy, technology, automation, and execution together so
+                            businesses can grow with greater efficiency and confidence.
+                        </p>
+                    </div>
+
+                    <div class="mission-visual" aria-hidden="true">
+                        <div class="mission-orb mission-orb-one"></div>
+                        <div class="mission-orb mission-orb-two"></div>
+                        <div class="mission-ring mission-ring-one"></div>
+                        <div class="mission-ring mission-ring-two"></div>
+                        <div class="mission-center">
+                            <span>AI</span>
+                            <strong>+</strong>
+                            <span>GROWTH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container-fluid">
+                <div class="section-head">
+                    <div class="kicker">What We Do</div>
+                    <h2>AI-powered digital growth services</h2>
+                    <p>Integrated solutions designed to connect marketing, technology, automation, and sales so your
+                        business can scale with greater efficiency.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service">
+                        <div class="icon">⌁</div>
+                        <h3>AI-Powered Sales Funnels</h3>
+                        <p>Build strategic funnels designed to attract prospects, nurture demand, and improve
+                            conversions.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">◈</div>
+                        <h3>Digital & Performance Marketing</h3>
+                        <p>Plan and execute digital campaigns around measurable business and performance goals.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">↗</div>
+                        <h3>Lead Generation & Acquisition</h3>
+                        <p>Create consistent lead-generation systems focused on quality prospects and sustainable
+                            acquisition.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">⚙</div>
+                        <h3>CRM & Marketing Automation</h3>
+                        <p>Streamline customer journeys, follow-ups, lead management, and repetitive marketing
+                            processes.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">✦</div>
+                        <h3>AI Agent Development</h3>
+                        <p>Design AI agents and automation systems that help businesses operate more efficiently.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">▣</div>
+                        <h3>Landing Pages & Websites</h3>
+                        <p>Create professional digital experiences built around your brand, offer, audience, and
+                            conversion goals.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">▤</div>
+                        <h3>E-Commerce Solutions</h3>
+                        <p>Build digital commerce experiences that support product discovery, conversion, and growth.
+                        </p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">⌕</div>
+                        <h3>SEO & Analytics</h3>
+                        <p>Use organic growth and analytics to understand performance and identify opportunities for
+                            improvement.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">◆</div>
+                        <h3>Brand Building & Positioning</h3>
+                        <p>Develop a stronger digital presence with clear positioning and consistent brand
+                            communication.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">◎</div>
+                        <h3>Paid & Organic Marketing</h3>
+                        <p>Combine paid and organic channels to create a balanced, sustainable growth engine.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">⌁</div>
+                        <h3>Conversion Rate Optimization</h3>
+                        <p>Improve the journey from attention to action with conversion-focused digital experiences.</p>
+                    </article>
+                    <article class="service">
+                        <div class="icon">↯</div>
+                        <h3>Marketing Strategy & Growth</h3>
+                        <p>Align strategy, technology, automation, and execution with the outcomes your business needs.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="why">
+            <div class="container-fluid">
+                <div class="section-head">
+                    <div class="kicker">Why Scales with AI?</div>
+                    <h2>One integrated growth ecosystem.</h2>
+                    <p>We don't just provide individual digital services. We build connected growth ecosystems that
+                        bring the right pieces together.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card"><b>Strategy</b><span>Clear direction built around your business goals.</span>
+                    </div>
+                    <div class="why-card"><b>Technology</b><span>Modern digital infrastructure to support growth.</span>
+                    </div>
+                    <div class="why-card"><b>Automation</b><span>Reduce repetitive work and streamline
+                            operations.</span></div>
+                    <div class="why-card"><b>Execution</b><span>Turn the plan into practical, measurable action.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="container-fluid">
+                <div class="section-head">
+                    <div class="kicker">How We Think</div>
+                    <h2>From business goals to growth systems.</h2>
+                    <p>A simple framework for building scalable, predictable, and profitable digital growth.</p>
+                </div>
+                <div class="process-grid">
+                    <div class="step">
+                        <div class="num">01</div>
+                        <h3>Understand</h3>
+                        <p>Start with your business, audience, offer, challenges, and growth goals.</p>
+                    </div>
+                    <div class="step">
+                        <div class="num">02</div>
+                        <h3>Strategize</h3>
+                        <p>Choose the right marketing, technology, automation, and performance strategy.</p>
+                    </div>
+                    <div class="step">
+                        <div class="num">03</div>
+                        <h3>Build & Automate</h3>
+                        <p>Turn the strategy into funnels, websites, CRM, campaigns, and AI-powered workflows.</p>
+                    </div>
+                    <div class="step">
+                        <div class="num">04</div>
+                        <h3>Optimize & Scale</h3>
+                        <p>Measure what matters, improve performance, and build for sustainable growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== Our Clients / Client Logo Wall ===== -->
+        <section id="clients" aria-labelledby="clients-title">
+            <div class="container-fluid">
+                <div class="section-head">
+                    <div class="kicker">Our Clients</div>
+                    <h2 id="clients-title">Built for businesses ready to <span class="gradient">grow.</span></h2>
+                    <p class="clients-intro">
+                        We bring strategy, AI, automation, and digital execution together to help businesses build
+                        practical growth systems.
+                    </p>
+                </div>
+                <div class="client-grid" aria-label="Client logos">
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/66fb4fa9-7554-4266-91fb-7197d2ebad05.png"
+                            alt="Client logo 01" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://storage.files-vault.com/landing_pages/64138/2ac1d039aee42cf2192c2869adaf0d08-2ac1d039aee42cf2192c2869adaf0d08-alive-logo.webp"
+                            alt="Client logo 02" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/d4a994f0-2f8f-41e8-a5d8-381198077cec.png"
+                            alt="Client logo 03" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/eeaa9c5a-029b-4b0d-85b9-b065920a05a9.png"
+                            alt="Client logo 04" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/4f106ab5-99da-40d2-a9e6-3d5398459cb8.png"
+                            alt="Client logo 05" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/cea3422e-4f6a-4ef5-9e1d-08d852db083c.png"
+                            alt="Client logo 06" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/4a57176a-3b4c-40db-918b-42a8cd042909.png"
+                            alt="Client logo 07" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/78a12ab8-ad09-4887-b112-3b6dc445af71.png"
+                            alt="Client logo 08" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/4a547946-12a6-443e-befd-43388f290d6a.png"
+                            alt="Client logo 09" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/eadaa1e9-31f8-4fb6-b6d6-d7adf1f6a8e6.png"
+                            alt="Client logo 10" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/0a92c2f6-7d8b-491c-8434-b71bb1cd3034.png"
+                            alt="Client logo 11" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/4e25a401-53b0-4cdb-bb56-6b18a5a62029.png"
+                            alt="Client logo 12" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/ee9471da-bccc-4f2d-ac4a-2bcd7555bda8.png"
+                            alt="Client logo 13" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card  client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/c5256b09-df4a-4c39-8219-6dffd29ab9af.png"
+                            alt="Client logo 14" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/df2f9abe-ddf0-4123-adbb-97f3e04a1eca.png"
+                            alt="Client logo 15" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/340784f8-de6d-44f7-9266-cacbc145a2c4.png"
+                            alt="Client logo 16" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/5f957f71-c1d0-44b9-b173-9884907e0c05.png"
+                            alt="Client logo 17" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/06aec12f-ce1e-4023-9394-d2f6fa43e29e.jpeg"
+                            alt="Client logo 18" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/2e3c6294-1cf7-4a0e-9feb-3a915e822f6a.png"
+                            alt="Client logo 19" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/da42a75b-f8f0-455b-b7fa-ef1ed57a608c.png"
+                            alt="Client logo 20" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/9544b70d-5520-441f-8269-47e4383aec0e.png"
+                            alt="Client logo 21" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/bb30b611-b194-44b5-8b89-adb576e5f80d.png"
+                            alt="Client logo 22" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/529c7830-6518-447b-a041-0ca4f015241a.png"
+                            alt="Client logo 23" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/26150c79-9111-442d-86e3-4c74ef561e50.png"
+                            alt="Client logo 24" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card client-alternate-bg">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/0cb92240-2a58-4546-96f3-9c3c1a6c3293.png"
+                            alt="Client logo 25" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card d-lap-n d-mob-b">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/cropped/df2f9abe-ddf0-4123-adbb-97f3e04a1eca.png"
+                            alt="Client logo 26" loading="lazy" decoding="async">
+                    </div>
+                    <div class="client-logo-card  client-alternate-bg d-lap-n">
+                        <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/c5256b09-df4a-4c39-8219-6dffd29ab9af.png"
+                            alt="Client logo 27" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container-fluid">
+
+                <div class="section-head">
+                    <div class="kicker">Client Testimonials</div>
+                    <h2>What Our <span class="gradient">Clients Say</span></h2>
+                    <p>
+                        Real experiences and feedback from businesses
+                        working with Scales With AI.
+                    </p>
+                </div>
+
+                <div class="testimonial-slider">
+
+                    <button class="testimonial-btn testimonial-prev" type="button" aria-label="Previous reviews">
+                        &#8249;
+                    </button>
+
+                    <div class="testimonial-viewport">
+                        <div class="testimonial-track">
+
+                            <!-- Review 1 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Great Experience</h3>
+                                <p>
+                                    One thing I really appreciate is their customer support. Their team is connected
+                                    through
+                                    WhatsApp, so whenever we have a question or need assistance, getting support is very
+                                    convenient. The quick communication makes a big difference when you’re running a
+                                    business.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">S</div>
+                                    <div>
+                                        <strong>Shalini Singh</strong>
+                                        <span>Stallion Atristry</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 2 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Professional Service</h3>
+                                <p>
+                                    I’ve had a very good experience with their performance marketing team. They
+                                    understand
+                                    the importance of leads, conversions, and the complete customer journey instead of
+                                    focusing only on running ads. Their communication and support have been
+                                    excellent👍🏻...
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">K</div>
+                                    <div>
+                                        <strong>Kshirsagar Sushil</strong>
+                                        <span>Arish Enterprises</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 3 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Helpful Strategy</h3>
+                                <p>
+                                    The WhatsApp automation has made our customer follow-up process much easier. Instead
+                                    of
+                                    manually handling every interaction, we can automate important communication and
+                                    stay
+                                    more consistent with leads. This has been a very useful addition to our business
+                                    workflow.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">V</div>
+                                    <div>
+                                        <strong>Virat Kumar</strong>
+                                        <span>M. B. Digital Solutions</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 4 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Good Communication</h3>
+                                <p>
+                                    My experience with the Scales with AI team has been very positive. They are easy to
+                                    communicate with, open to feedback, and willing to explain things whenever needed.
+                                    Their
+                                    approach is practical rather than overly technical, which makes the whole process
+                                    easier
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">A</div>
+                                    <div>
+                                        <strong>Ashish Patra</strong>
+                                        <span>Elvanto Realestate</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 5 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Reliable Support</h3>
+                                <p>
+                                    The technology is useful, but what I appreciate equally is the support from the
+                                    team.
+                                    Whenever I have a question, I can connect with them through WhatsApp and get support
+                                    quickly. Having that kind of accessibility makes implementing new technology much
+                                    easier.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">N</div>
+                                    <div>
+                                        <strong>Nishant Kumar</strong>
+                                        <span>UNA Care Services</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 6 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Positive Collaboration</h3>
+                                <p>
+                                    Prashant and the Scales with AI team have been very supportive in helping me grow my
+                                    business. They don’t just focus on technology; they try to understand the business
+                                    first
+                                    and then suggest solutions. Their guidance and support have been really valuable.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">K</div>
+                                    <div>
+                                        <strong>Kanchan Kumar</strong>
+                                        <span>Maa Bhawani Digital Solutions</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 7 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Seamless Business Automation</h3>
+                                <p>
+                                    For me, Scales with AI has become one of the most useful AI tools for business
+                                    owners.
+                                    From automation and CRM to leads and marketing, having multiple processes connected
+                                    makes daily operations much easier. The team is responsive and always ready to help.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">S</div>
+                                    <div>
+                                        <strong>Shubham Raj Sharma</strong>
+                                        <span>Digi Info. Tech</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Review 8 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3>Effective Lead Generation</h3>
+                                <p>
+                                    The team at Scales With AI did a great job helping us streamline our lead generation
+                                    and
+                                    sales automation. We have seen a real improvement in how we handle our processes
+                                    since
+                                    working with them. I would definitely recommend their services to other businesses
+                                    looking to grow.
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">F</div>
+                                    <div>
+                                        <strong>Namrata Kaur</strong>
+                                        <span>Digital Gyaan Services</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <button class="testimonial-btn testimonial-next" type="button" aria-label="Next reviews">
+                        &#8250;
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="cta">
+            <div class="container-fluid">
+                <div class="cta-box">
+                    <div>
+                        <div class="kicker">Ready to grow?</div>
+                        <h2>Build a smarter business with AI.</h2>
+                        <p>Let's create the systems that help you attract, convert, automate, and scale.</p>
+                    </div>
+                    <a class="btn dark" href="https://book.scaleswithai.com/" target="_blank" rel="noopener">Book a
+                        Strategy Call →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container-fluid">
+                <div class="section-head">
+                    <div class="kicker">Contact Us</div>
+                    <h2>Let's build your growth system.</h2>
+                    <p>Tell us what you're trying to achieve and we'll start the conversation.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Start with a conversation.</h3>
+                        <p>Whether you need AI automation, lead generation, digital marketing, a website, CRM
+                            automation, or a complete growth strategy, we can design the right system around your goals.
+                        </p>
+                        <div class="contact-list">
+                            <div class="contact-item"><strong>Email</strong><br><a
+                                    href="mailto:care@scaleswithai.com">care@scaleswithai.com</a></div>
+                            <div class="contact-item"><strong>Website</strong><br><a href="https://scaleswithai.com/"
+                                    target="_blank">scaleswithai.com</a></div>
+                            <div class="contact-item"><strong>Strategy Call</strong><br><a
+                                    href="https://book.scaleswithai.com/" target="_blank">Book your 1:1 call →</a></div>
+                        </div>
+                    </div>
+                    <form class="form" id="contactForm">
+                        <div class="form-grid">
+                            <div class="field"><label for="name">Name</label><input id="name" name="Name" required
+                                    placeholder="Your name"></div>
+                            <div class="field"><label for="email">Email</label><input id="email" name="Email"
+                                    type="email" required placeholder="you@company.com"></div>
+                            <div class="field"><label for="company">Company</label><input id="company" name="Company"
+                                    placeholder="Company name"></div>
+                            <div class="field"><label for="service">What do you need?</label><input id="service"
+                                    name="Service" placeholder="e.g. AI Automation"></div>
+                            <div class="field full"><label for="message">Message</label><textarea id="message"
+                                    name="Message" required
+                                    placeholder="Tell us about your business and your goals..."></textarea></div>
+                            <div class="field full"><button class="btn primary" type="submit">Send Enquiry →</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid footer-inner">
+            <a class="brand" href="https://scaleswithai.com/">
+                <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/4d259bc3-16fa-40c8-a9b5-8822e873eaaf.png"
+                    alt="Scales With AI" class="brand-logo">
+            </a>
+            <small>© 2026 Scales with AI. Build Smarter. Automate Better. Scale Faster.</small>
+            <small><a href="https://scaleswithai.com/" target="_blank">Privacy</a> · <a href="https://scaleswithai.com/"
+                    target="_blank">Terms</a></small>
+        </div>
+    </footer>
+
+    <script>
+        (() => {
+            const toggle = document.getElementById('menuToggle');
+            const menu = document.getElementById('mainMenu');
+            const header = document.getElementById('siteHeader');
+            const form = document.getElementById('contactForm');
+            if (!toggle || !menu) return;
+
+            const closeMenu = () => {
+                menu.classList.remove('is-open');
+                toggle.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.setAttribute('aria-label', 'Open navigation menu');
+            };
+            const openMenu = () => {
+                menu.classList.add('is-open');
+                toggle.classList.add('is-open');
+                toggle.setAttribute('aria-expanded', 'true');
+                toggle.setAttribute('aria-label', 'Close navigation menu');
+            };
+            toggle.addEventListener('click', e => {
+                e.stopPropagation();
+                menu.classList.contains('is-open') ? closeMenu() : openMenu();
+            });
+            menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+            document.addEventListener('click', e => {
+                if (menu.classList.contains('is-open') && !menu.contains(e.target) && !toggle.contains(e.target)) closeMenu();
+            });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu() });
+            window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMenu() });
+            const headerState = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+            headerState(); window.addEventListener('scroll', headerState, { passive: true });
+
+            if (form) {
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    const d = new FormData(form);
+                    const body = encodeURIComponent(
+                        `Name: ${d.get('Name') || ''}\nEmail: ${d.get('Email') || ''}\nCompany: ${d.get('Company') || ''}\nService: ${d.get('Service') || ''}\n\nMessage:\n${d.get('Message') || ''}`
+                    );
+                    window.location.href = `mailto:care@scaleswithai.com?subject=${encodeURIComponent('New Scales with AI Enquiry')}&body=${body}`;
+                });
+            }
+        })();
+        // client section suffel on every refresh script code
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const clientGrid = document.querySelector("#clients .client-grid");
+
+            if (!clientGrid) return;
+
+            // Get all client cards, including their background classes
+            const clientCards = Array.from(
+                clientGrid.querySelectorAll(".client-logo-card")
+            );
+
+            // Fisher-Yates shuffle algorithm
+            for (let i = clientCards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+
+                [clientCards[i], clientCards[j]] =
+                    [clientCards[j], clientCards[i]];
+            }
+
+            // Reinsert the complete cards in shuffled order
+            const fragment = document.createDocumentFragment();
+
+            clientCards.forEach(function (card) {
+                fragment.appendChild(card);
+            });
+
+            clientGrid.appendChild(fragment);
+        });
+
+        // Testimonial section suffel on every refresh script code
+
+        document.querySelectorAll(".testimonial-slider").forEach((slider) => {
+            const track = slider.querySelector(".testimonial-track");
+            const cards = Array.from(
+                slider.querySelectorAll(".testimonial-card")
+            );
+
+            const prevBtn = slider.querySelector(".testimonial-prev");
+            const nextBtn = slider.querySelector(".testimonial-next");
+            const viewport = slider.querySelector(".testimonial-viewport");
+
+            if (!track || cards.length === 0 || !prevBtn || !nextBtn) return;
+
+            let currentIndex = 0;
+            let autoSlide;
+            let isTransitioning = false;
+
+            // Responsive visible cards
+            function getVisibleCards() {
+                if (window.innerWidth <= 560) return 1;
+                if (window.innerWidth <= 950) return 2;
+                return 4;
+            }
+
+            // Clone first cards to create an infinite loop
+            let visibleCards = getVisibleCards();
+
+            function setupSlider() {
+                clearInterval(autoSlide);
+
+                // Remove old clones before rebuilding
+                track.querySelectorAll(".testimonial-clone").forEach((clone) => {
+                    clone.remove();
+                });
+
+                visibleCards = getVisibleCards();
+
+                // Clone enough cards to keep the loop seamless
+                for (let i = 0; i < visibleCards; i++) {
+                    const clone = cards[i % cards.length].cloneNode(true);
+                    clone.classList.add("testimonial-clone");
+                    clone.setAttribute("aria-hidden", "true");
+                    track.appendChild(clone);
+                }
+
+                currentIndex = 0;
+                track.style.transition = "none";
+                updateSlider();
+
+                // Re-enable smooth transition after layout update
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        track.style.transition = "transform .45s ease";
+                    });
+                });
+
+                startAutoSlide();
+            }
+
+            function updateSlider() {
+                const firstCard = track.querySelector(".testimonial-card");
+                if (!firstCard) return;
+
+                const cardWidth = firstCard.getBoundingClientRect().width;
+                const trackStyle = window.getComputedStyle(track);
+                const gap = parseFloat(trackStyle.columnGap) || 0;
+
+                track.style.transform =
+                    `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+            }
+
+            function moveNext() {
+                if (isTransitioning) return;
+
+                isTransitioning = true;
+                currentIndex++;
+                track.style.transition = "transform .45s ease";
+                updateSlider();
+            }
+
+            function movePrev() {
+                if (isTransitioning) return;
+
+                isTransitioning = true;
+
+                if (currentIndex === 0) {
+                    // Jump to the cloned ending cards, then move backward
+                    currentIndex = cards.length;
+                    track.style.transition = "none";
+                    updateSlider();
+
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            currentIndex--;
+                            track.style.transition = "transform .45s ease";
+                            updateSlider();
+                        });
+                    });
+                } else {
+                    currentIndex--;
+                    track.style.transition = "transform .45s ease";
+                    updateSlider();
+                }
+            }
+
+            track.addEventListener("transitionend", () => {
+                // Reached cloned cards at the end: reset to original beginning
+                if (currentIndex >= cards.length) {
+                    track.style.transition = "none";
+                    currentIndex = 0;
+                    updateSlider();
+                }
+
+                isTransitioning = false;
+            });
+
+            function startAutoSlide() {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(moveNext, 4000);
+            }
+
+            // Manual buttons
+            nextBtn.disabled = false;
+            prevBtn.disabled = false;
+
+            nextBtn.addEventListener("click", () => {
+                moveNext();
+                startAutoSlide();
+            });
+
+            prevBtn.addEventListener("click", () => {
+                movePrev();
+                startAutoSlide();
+            });
+
+            // Pause while user hovers over the slider
+            slider.addEventListener("mouseenter", () => {
+                clearInterval(autoSlide);
+            });
+
+            slider.addEventListener("mouseleave", startAutoSlide);
+
+            // Swipe support on mobile
+            let touchStartX = 0;
+
+            if (viewport) {
+                viewport.addEventListener("touchstart", (event) => {
+                    touchStartX = event.changedTouches[0].screenX;
+                }, { passive: true });
+
+                viewport.addEventListener("touchend", (event) => {
+                    const delta =
+                        event.changedTouches[0].screenX - touchStartX;
+
+                    if (Math.abs(delta) > 40) {
+                        if (delta < 0) {
+                            moveNext();
+                        } else {
+                            movePrev();
+                        }
+                        startAutoSlide();
+                    }
+                }, { passive: true });
+            }
+
+            // Recalculate when screen size changes
+            let resizeTimer;
+
+            window.addEventListener("resize", () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(setupSlider, 200);
+            });
+
+            setupSlider();
+        });
+
+    </script>
+
+</body>
+
+</html>

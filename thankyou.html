@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Thank You | Scales With AI</title>
+    <meta name="description" content="Thank you for contacting Scales With AI. Your enquiry has been received.">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="https://scaleswithai.com/thank-you">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: Inter, Arial, sans-serif;
+            color: #071936
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background:
+                radial-gradient(circle at 8% 15%, rgba(245, 130, 32, .20), transparent 25%),
+                radial-gradient(circle at 94% 15%, rgba(8, 120, 232, .16), transparent 28%),
+                radial-gradient(circle at 12% 92%, rgba(24, 185, 87, .10), transparent 24%),
+                linear-gradient(135deg, #fffaf5, #fff 50%, #f5faff)
+        }
+
+        .bg {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none
+        }
+
+        .b1 {
+            width: 430px;
+            height: 430px;
+            right: -230px;
+            top: -220px;
+            background: radial-gradient(circle, rgba(8, 120, 232, .18), transparent 68%)
+        }
+
+        .b2 {
+            width: 430px;
+            height: 430px;
+            left: -240px;
+            bottom: -250px;
+            background: radial-gradient(circle, rgba(245, 130, 32, .16), transparent 68%)
+        }
+
+        header {
+            width: min(1160px, calc(100% - 40px));
+            margin: auto;
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            max-width: 220px;
+        }
+
+        .logo img {
+            display: block;
+            width: 185px;
+            height: auto;
+            max-height: 58px;
+            object-fit: contain;
+            object-position: left center;
+        }
+
+        .home {
+            padding: 10px 17px;
+            border: 1px solid rgba(7, 25, 54, .12);
+            border-radius: 999px;
+            text-decoration: none;
+            color: #071936;
+            font-size: 13px;
+            font-weight: 700;
+            background: rgba(255, 255, 255, .75)
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: min(900px, calc(100% - 28px));
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            padding: 0px 0 55px
+        }
+
+        .card {
+            width: 100%;
+            text-align: center;
+            background: rgba(255, 255, 255, .90);
+            border: 1px solid rgba(7, 25, 54, .09);
+            border-radius: 30px;
+            padding: 30px 45px 48px;
+            box-shadow: 0 28px 80px rgba(7, 25, 54, .11);
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden
+        }
+
+        .card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #f58220, #ff9a3d, #0878e8, #18b957)
+        }
+
+        .icon {
+            width: 88px;
+            height: 88px;
+            margin: 0 auto 23px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(145deg, #fff0df, #fff8f1);
+            border: 1px solid rgba(245, 130, 32, .18);
+            box-shadow: 0 14px 35px rgba(245, 130, 32, .12)
+        }
+
+        .check {
+            width: 34px;
+            height: 20px;
+            border-left: 6px solid #f58220;
+            border-bottom: 6px solid #f58220;
+            transform: rotate(-45deg) translate(2px, -3px)
+        }
+
+        .eyebrow {
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: 800;
+            color: #f58220;
+            text-transform: uppercase;
+            margin-bottom: 12px
+        }
+
+        h1 {
+            font-size: clamp(44px, 7vw, 72px);
+            line-height: 1;
+            letter-spacing: -3px;
+            margin: 0
+        }
+
+        h1 span {
+            color: #0878e8
+        }
+
+        .lead {
+            max-width: 650px;
+            margin: 20px auto 0;
+            color: #59677d;
+            font-size: 17px;
+            line-height: 1.7
+        }
+
+        .next {
+            max-width: 680px;
+            margin: 28px auto 0;
+            padding: 20px 23px;
+            text-align: left;
+            border: 1px solid rgba(7, 25, 54, .08);
+            border-radius: 17px;
+            background: linear-gradient(135deg, #fffaf5, #f8fbff)
+        }
+
+        .next strong {
+            font-size: 14px
+        }
+
+        .next p {
+            margin: 7px 0 0;
+            color: #667085;
+            font-size: 13px;
+            line-height: 1.65
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 27px
+        }
+
+        .btn {
+            padding: 13px 22px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 800
+        }
+
+        .primary {
+            color: #fff;
+            background: linear-gradient(135deg, #f58220, #ff7410);
+            box-shadow: 0 11px 25px rgba(245, 130, 32, .22)
+        }
+
+        .secondary {
+            color: #071936;
+            background: #fff;
+            border: 1px solid rgba(7, 25, 54, .13)
+        }
+
+        .actions .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            min-width: 205px;
+            padding: 14px 22px;
+        }
+
+        .actions .btn b {
+            font-size: 17px;
+            line-height: 1;
+            font-weight: 700;
+            transition: transform .25s ease;
+        }
+
+        .actions .btn:hover b {
+            transform: translate(3px, -2px);
+        }
+
+        .actions .primary {
+            border: 0;
+        }
+
+        .actions .secondary {
+            background: #fff;
+        }
+
+        .trust {
+            display: flex;
+            justify-content: center;
+            gap: 27px;
+            flex-wrap: wrap;
+            margin-top: 27px;
+            color: #667085;
+            font-size: 11px;
+            font-weight: 600
+        }
+
+        .trust i {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #18b957;
+            margin-right: 6px
+        }
+
+        footer {
+            text-align: center;
+            padding: 0 20px 22px;
+            color: #7b8798;
+            font-size: 11px;
+            position: relative;
+            z-index: 2
+        }
+
+        @media(max-width:600px) {
+            header {
+                width: calc(100% - 26px);
+                padding: 10px 0
+            }
+
+            .logo {
+                max-width: 165px;
+            }
+
+            .logo img {
+                width: 155px;
+                max-height: 48px;
+            }
+
+            .home {
+                font-size: 11px;
+                padding: 8px 12px
+            }
+
+            main {
+                padding: 0px 0 40px
+            }
+
+            .card {
+                padding: 20px 19px 35px;
+                border-radius: 24px
+            }
+
+            .icon {
+                width: 76px;
+                height: 76px
+            }
+
+            h1 {
+                letter-spacing: -2px
+            }
+
+            .lead {
+                font-size: 14px
+            }
+
+            .next {
+                text-align: center;
+                padding: 17px
+            }
+
+            .actions {
+                flex-direction: column
+            }
+
+            .btn {
+                width: 100%;
+                min-width: 0;
+            }
+
+            .actions .btn {
+                min-width: 0;
+            }
+
+            .trust {
+                flex-direction: column;
+                gap: 9px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg b1"></div>
+    <div class="bg b2"></div>
+    <header>
+        <a class="logo" href="https://scaleswithai.com/">
+            <img src="https://myappz-v2.b-cdn.net/agency/456b6107-9162-4ee5-b2b5-f35c9cb9bd88/sub/f56e5976-403f-4d13-9805-72b2d2eec91e/uploads/4d259bc3-16fa-40c8-a9b5-8822e873eaaf.png"
+                alt="Scales With AI">
+        </a>
+        <a class="home" href="https://scaleswithai.com/">← Back to Home</a>
+    </header>
+    <main>
+        <section class="card">
+            <div class="icon" aria-hidden="true">
+                <div class="check"></div>
+            </div>
+            <div class="eyebrow">Message Received</div>
+            <h1>Thank You<span>!</span></h1>
+            <p class="lead">Thank you for reaching out to <strong>Scales With AI</strong>. We’ve received your enquiry
+                and our team will review your requirements carefully.</p>
+            <div class="next"><strong>What happens next?</strong>
+                <p>Our team will get back to you shortly to understand your goals, challenges, and requirements — and
+                    explore how AI, automation, marketing, and digital growth solutions can help your business scale.
+                </p>
+            </div>
+            <div class="actions">
+                <a class="btn primary" href="https://wa.link/ywasvm" target="_blank">
+                    <span>Book a Strategy Call</span><b>↗</b>
+                </a>
+                <a class="btn secondary" href="https://scaleswithai.com/">
+                    <span>Explore Scales With AI </span><b>→</b>
+                </a>
+            </div>
+            <div class="trust"><span><i></i>Strategy Focused</span><span><i></i>AI-Powered
+                    Solutions</span><span><i></i>Growth Focused</span></div>
+        </section>
+    </main>
+    <footer>© 2026 Scales With AI · Build · Automate · Scale</footer>
+</body>
+
+</html>
